@@ -50,11 +50,10 @@ public class Bird
         y += velocity;
     }
 
-    public void jump(double vel)
+    public synchronized void jump(double vel)
     {
         // aka set velocity
         velocity = vel;
     }
-
 
 }
